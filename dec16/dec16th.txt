@@ -1,0 +1,19 @@
+grid format:
+row -- 12 columns
+columns
+4 4 4
+4 8
+8 4 
+2 2 4 2 2
+container -- row --
+col-xs-
+col-sm-
+col-md-
+col-lg-
+
+Responsive is predefined class
+Bootstrap is mainly designed for div tags
+
+
+
+ 
