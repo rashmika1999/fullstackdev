@@ -1,0 +1,12 @@
+.a1{
+border-style:solid;
+border-width:10px;
+border-color:balck;
+background-image:url(1.jpg)
+}
+.a2{
+	border-style:solid;
+}
+.a3{
+	border-style:double;
+}
