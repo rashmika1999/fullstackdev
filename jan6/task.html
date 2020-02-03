@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script>
+            $(document).ready(function()
+            {
+                $("#a1").hide();
+                $("#btn1").hover(function(){
+                    $("#a1").slideDown(); 
+                    $("#a2").slideUp();
+                    $("#a3").slideUp();
+
+                });                
+                $("#a2").hide();
+                $("#btn2").hover(function(){
+                    $("#a2").slideDown();
+                    $("#a1").slideUp();
+                    $("#a3").slideUp();
+                });
+                $("#a3").hide();
+                $("#btn3").hover(function(){
+                    $("#a3").slideToggle();
+                    $("#a2").slideUp();
+                    $("#a1").slideUp();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <button id="btn1"  class="btn btn-primary btn-block">college details</button>
+        <div id="a1">
+            <h4>gitam university</h4>
+        </div>
+        <button id="btn2"  class="btn btn-primary btn-block">fee structure</button>
+        <div id="a2">
+            <h4>300000</h4>
+        </div>
+        <button id="btn3" class="btn btn-primary btn-block">vision of college</button>
+        <div id="a3">
+            <h4>serve</h4>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#btn1").click(function(){
+                    $("#a1").slideDown();
+                });
+                $("#btn2").click(function(){
+                    $("#a2").slideUp();
+                });
+                $("#btn3").click(function(){
+                    $("#a3").slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">SlideDown</button>
+        <button id="btn2">SlideUp</button>
+        <button id="btn3">SlideToggle</button>
+        <div id="a1">
+            <h1>slidedown</h1>
+        </div>
+        <div id="a2">
+            <h1>slideup</h1>
+        </div>
+        <div id="a3">
+            <h1>
+                slide toggle
+            </h1>
+        </div>
+    </body>
+</html>
