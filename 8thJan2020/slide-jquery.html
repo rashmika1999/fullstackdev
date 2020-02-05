@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Intro</title>
+        <!--load j-query file-->
+        <script src="jquery-3.4.1.min.js"></script>
+        <!-- to perform some actions using j-query-->
+        <script>
+           $(document).ready(function(){
+               $(".btn1").click(function(){
+                   $("#d1").slideDown();
+               });
+               $(".btn2").click(function(){
+                   $("#d2").slideUp();
+               });
+               $(".btn3").click(function(){
+                   $("#d3").slideToggle();
+               });
+           });
+        </script>
+    </head>
+    <body>
+            <div id="d1"><h1>slideDown</h1></div>
+            <div id="d2"><h1>slideUp</h1></div>
+            <div id="d3"><h1>slideToggle</h1></div>
+            <button class="btn1">slideDown</button>
+            <button class="btn2">slideUp</button>
+            <button class="btn3">sideToggle</button>
+    </body>
+</html>
